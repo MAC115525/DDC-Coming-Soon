@@ -23,12 +23,14 @@
   </style>
 </head>
 
-<body class="flex flex-col items-center justify-start min-h-screen px-4 pt-6 space-y-4">
+<body class="flex flex-col items-center justify-start min-h-screen px-4 pt-6 space-y-6">
 
-  <!-- Logo and Content Wrapper (Reduced Gap & Smaller Logo) -->
-  <div class="space-y-1">
-    <!-- Smaller DDC Logo -->
-    <img src="ddc-logo.svg" alt="DDC Logo" class="mx-auto w-48 h-48 object-contain" />
+  <!-- Logo and Content Wrapper (Reduced Gap Between Logo and Content) -->
+  <div class="space-y-2">
+    <!-- DDC Logo -->
+    <!-- If the logo doesn't display, replace the src with a base64-encoded string -->
+    <!-- To get the base64 string: upload 'ddc-logo.svg' to a site like base64-image.de, copy the string, and use src="data:image/svg+xml;base64,[your-base64-string]" -->
+    <img src="ddc-logo.svg" alt="DDC Logo" class="mx-auto w-80 h-80 object-contain" />
 
     <!-- Heading (No Gap Between Heading and Paragraph) -->
     <div class="space-y-0 text-center">
@@ -39,25 +41,23 @@
     </div>
   </div>
 
-  <!-- Smiles Across Generations and Dr. Salauddin Khan (Tighter spacing) -->
-  <div class="space-y-1 max-w-3xl px-4 text-gray-300 text-center text-sm md:text-base">
+  <!-- Smiles Across Generations and Dr. Salauddin Khan (No Gap) -->
+  <div class="space-y-0 max-w-3xl px-4 text-gray-300 text-center text-sm md:text-base">
     <p class="text-lg md:text-xl text-gray-300">"Smiles Across Generations. 50 Years of Dental Excellence."</p>
     <p>Dr. Salauddin Khan, BDS, MDS, a distinguished name in dental care, has been crafting smiles and building confidence for over 50 years. A former Professor at St. John’s Medical College and Hospital and ex-consultant at St. Martha’s Hospital, Dr. Khan has served celebrities, cricketers, politicians, and professionals since 1973. With a legacy rooted in ethics, empathy, and advanced care, he has mentored and trained numerous dental specialists across various disciplines of dentistry.</p>
   </div>
 
-  <!-- Virtual Tour Heading and Video -->
+  <!-- Virtual Tour Heading and Video (with hyperlink) -->
   <div class="w-full max-w-3xl px-4">
-    <h3 class="text-center text-lg font-medium mb-2">▶️ Take a Virtual Tour of Our Clinic</h3>
+    <h3 class="text-center text-lg font-medium">
+      <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zcsycooNyouNGC0UjWoME5KTDU0TTG3TAGSpqlJVgYVaQYGKSaWScYWqeYmZolpaV5KKal5JYk5CimZiel5-cUlmckKyUCRolSFpMS89MSc_KJUALVEHOQ&q=dental+diagnostic+centre+bangalore&rlz=1C1GCEU_enIN1161IN1161&oq=dental+diagonistic&gs_lcrp=EgZjaHJvbWUqEggCEC4YDRivARjHARiSAxiABDIGCAAQRRg5Mg8IARAuGA0YrwEYxwEYgAQyEggCEC4YDRivARjHARiSAxiABDINCAMQABiSAxiABBiKBTIJCAQQABgNGIAEMg8IBRAuGA0YrwEYxwEYgAQyDAgGEAAYDRjJAxiABDIJCAcQABgNGIAEMgkICBAAGA0YgATSAQkxMTA3MGowajeoAgiwAgHxBegAVqHoxkPa&sourceid=chrome&ie=UTF-8#lpg=cid:CgIgAQ%3D%3D,ik:CAoSFkNJSE0wb2dLRUlDQWdJREx4ZVcxS1E" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">
+        ▶️ Take a Virtual Tour of Our Clinic
+      </a>
+    </h3>
     <div class="aspect-w-16 aspect-h-9">
       <iframe class="w-full h-64 md:h-96 rounded-lg" src="https://www.youtube.com/embed/O5hURQIeTjo" title="DDC Virtual Tour" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
-
-  <!-- Email Notification -->
-  <form class="flex flex-col md:flex-row items-center justify-center gap-2" method="POST" action="subscribe.php">
-    <input type="email" name="email" placeholder="Enter your email" class="px-4 py-2 rounded text-black w-full md:w-auto" required />
-    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded" type="submit">Notify Me</button>
-  </form>
 
   <!-- Clinic Info -->
   <div class="text-center max-w-xl text-sm md:text-base space-y-2">
@@ -77,3 +77,4 @@
   <p class="mt-10 text-sm text-gray-500 text-center">© 2025 DDC. All rights reserved.</p>
 </body>
 </html>
+
