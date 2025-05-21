@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dental Diagnostic Centre | DDC | Coming Soon</title>
-  
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="DDC – Dental Diagnostic Centre, led by Dr. Salauddin Khan in Bengaluru, blends 50+ years of dental excellence with modern innovation. Specializing in implants, orthodontics, cosmetic dentistry, pediatric care and more.">
   <meta name="keywords" content="Dental Diagnostic Centre, DDC Bangalore, Cosmetic Dentistry, Dental Implants, Pediatric Dentistry, Oral Surgery, Root Canal, Orthodontics, Smile Makeover, Dr. Salauddin Khan, Prosthodontics, Periodontics, Oral Pathology, Preventive Care, Dental Clinic Richmond Road, Bangalore Dental Specialist, Invisalign Bangalore">
   <meta name="author" content="Dental Diagnostic Centre">
-  
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <style>
     body {
       background-color: #0f172a;
@@ -20,40 +20,48 @@
     h1 {
       font-weight: 700;
     }
+    /* Reduce gap between virtual tour and content */
+    #virtual-tour {
+      margin-bottom: 0.5rem; /* smaller bottom margin */
+    }
+    #clinic-info {
+      margin-top: 0; /* remove top margin */
+    }
   </style>
 </head>
 
-<body class="flex flex-col items-center justify-start min-h-screen px-4 pt-6 space-y-8">
+<body class="flex flex-col items-center justify-start min-h-screen px-4 pt-6 space-y-4">
 
-  <!-- DDC Logo (Move higher) -->
-  <img src="ddc-logo.svg" alt="DDC Logo" class="mx-auto w-80 md:w-96 h-auto object-contain mt-2" />
+  <!-- DDC Logo (No white frame, positioned near top) -->
+  <img src="ddc-logo.svg" alt="DDC Logo" class="mx-auto w-96 h-96 object-contain" />
 
-  <!-- Heading -->
-  <div class="text-center space-y-2">
-    <h1 class="text-4xl md:text-5xl">Coming Soon</h1>
-    <p class="text-lg md:text-xl text-gray-300 max-w-xl mx-auto">
-      Stay tuned! For the Dental Diagnostic Centre digital experience.
-    </p>
+  <!-- Coming Soon Text just below logo -->
+  <div class="text-center max-w-xl space-y-1">
+    <h1 class="text-4xl md:text-5xl font-bold">Coming Soon</h1>
+    <p class="text-lg md:text-xl text-gray-300">Stay tuned! For the Dental Diagnostic Centre digital experience.</p>
   </div>
 
-  <!-- Virtual Tour Video -->
-  <div class="w-full max-w-3xl px-4 pt-4">
-    <h3 class="text-center text-lg mb-2 font-medium">▶️ Take a Virtual Tour of Our Clinic</h3>
-    <div class="aspect-w-16 aspect-h-9">
-      <iframe class="w-full h-64 md:h-96 rounded-lg" src="https://www.youtube.com/embed/O5hURQIeTjo" title="DDC Virtual Tour" frameborder="0" allowfullscreen></iframe>
-    </div>
+  <!-- Virtual Tour Text Only, moved a little closer up -->
+  <div id="virtual-tour" class="w-full max-w-3xl px-4 pt-2">
+    <h3 class="text-center text-lg font-medium">▶️ Take a Virtual Tour of Our Clinic</h3>
+  </div>
+
+  <!-- Clinic Info - moved just below the virtual tour text -->
+  <div id="clinic-info" class="text-center max-w-xl text-sm md:text-base space-y-2">
+    <h2 class="text-xl font-semibold">DDC – Dental Diagnostic Centre: Where Tradition Meets Innovation!</h2>
+    <p>Dr. Salauddin Khan, BDS, MDS, a distinguished name in dental care, has been crafting smiles and building confidence for over 50 years. A former Professor at St. John’s Medical College and Hospital and ex-consultant at St. Martha’s Hospital, Dr. Khan has served celebrities, cricketers, politicians, and professionals since 1973. With a legacy of ethics, empathy, and advanced care, he has also mentored and trained numerous dental specialists across the field.</p>
   </div>
 
   <!-- Email Notification -->
-  <form class="flex flex-col md:flex-row items-center justify-center gap-2 pt-6">
+  <form class="flex flex-col md:flex-row items-center justify-center gap-2 mt-6">
     <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded text-black w-full md:w-auto" required />
     <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded" type="submit">Notify Me</button>
   </form>
 
-  <!-- Clinic Info -->
+  <!-- Clinic Address and Contact -->
   <div class="text-center max-w-xl text-sm md:text-base space-y-2 pt-6">
     <h2 class="text-xl font-semibold">Dental Diagnostic Centre</h2>
-    <p>105 Parvathi Plaza, 2nd & 3rd Floor, Richmond Road,<br>Langford Gardens, Bengaluru 560025</p>
+    <p>105 Parvathi Plaza, 2nd & 3rd Floor, Richmond Road,<br />Langford Gardens, Bengaluru 560025</p>
     <p>📞 <a href="tel:+917676909057" class="text-blue-400 hover:underline">76769 09057</a></p>
     <p>✉️ <a href="mailto:info@dentaldiagnosticcentre.in" class="text-blue-400 hover:underline">info@dentaldiagnosticcentre.in</a></p>
   </div>
@@ -61,13 +69,13 @@
   <!-- Google Map -->
   <div class="w-full max-w-3xl px-4 pt-6">
     <h3 class="text-center text-lg mb-2 font-medium">📍 Visit Us</h3>
-    <iframe class="w-full h-64 md:h-96 rounded-lg border" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.883655783224!2d77.6007282!3d12.9619744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167844c4d0b7%3A0xeef14b1a3f86bc99!2sDental%20Diagnostic%20Centre!5e0!3m2!1sen!2sin!4v1716283296342" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-
-  <!-- About DDC -->
-  <div class="max-w-3xl px-4 text-gray-300 pt-6 text-center text-sm md:text-base">
-    <p><strong>DDC – Dental Diagnostic Centre: Where Tradition Meets Innovation!</strong></p>
-    <p>Dr. Salauddin Khan, BDS, MDS, a distinguished name in dental care, has been crafting smiles and building confidence for over 50 years. A former Professor at St. John’s Medical College and Hospital and ex-consultant at St. Martha’s Hospital, Dr. Khan has served celebrities, cricketers, politicians, and professionals since 1973. With a legacy of ethics, empathy, and advanced care, he has also mentored and trained numerous dental specialists across the field.</p>
+    <iframe
+      class="w-full h-64 md:h-96 rounded-lg border"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.883655783224!2d77.6007282!3d12.9619744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167844c4d0b7%3A0xeef14b1a3f86bc99!2sDental%20Diagnostic%20Centre!5e0!3m2!1sen!2sin!4v1716283296342"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </div>
 
   <!-- Footer -->
