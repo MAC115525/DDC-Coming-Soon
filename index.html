@@ -2,61 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Coming Soon - Dental Diagnostic Centre's new digital experience.">
-  <meta name="keywords" content="Dental Diagnostic Centre, Dr. Salauddin Khan, Dental Clinic Bangalore, Dental Care, Oral Health, Smile Care, Digital Experience">
-  <meta name="author" content="Mohammed Murtaza">
-  <title>Coming Soon | Dental Diagnostic Centre</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dental Diagnostic Centre | Coming Soon</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="DDC – Dental Diagnostic Centre, led by Dr. Salauddin Khan in Bengaluru, blends 50+ years of dental excellence with modern innovation.">
+  <meta name="keywords" content="Dental Diagnostic Centre, DDC Bangalore, Cosmetic Dentistry, Dental Implants, Pediatric Dentistry, Oral Surgery, Orthodontics, Smile Makeover, Dr. Salauddin Khan">
+  <meta name="author" content="Dental Diagnostic Centre">
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-  <div class="flex flex-col items-center justify-center min-h-screen px-4 py-8">
-    
-    <!-- Logo (100% larger) -->
-    <img src="best.svg" alt="DDC Logo" class="w-64 md:w-80 mb-4 mt-4" />
 
-    <!-- Coming Soon Text (50% smaller font) -->
-    <h1 class="text-xl font-bold text-center mb-2">Coming Soon</h1>
-    <p class="text-center text-base mb-4">Stay tuned! For the Dental Diagnostic Centre digital experience.</p>
+<body class="flex flex-col items-center justify-start min-h-screen px-4 pt-6 space-y-6">
 
-    <!-- Video Section (removed broken video) -->
-    <div class="w-full max-w-2xl mb-6">
-      <div class="bg-gray-200 p-6 text-center rounded-md text-red-600 font-semibold">
-        ▶️ Virtual Tour video will be available soon
-      </div>
-    </div>
+  <!-- Logo -->
+  <img src="ddc-logo.svg" alt="DDC Logo" class="w-48 h-48 object-contain" />
 
-    <!-- Virtual Tour Link (no video, still clickable) -->
-    <a href="https://www.youtube.com" target="_blank" class="text-blue-600 underline mb-6">
-      ▶️ Take a Virtual Tour of Our Clinic
-    </a>
-
-    <!-- About the Clinic -->
-    <div class="max-w-3xl text-center px-4 mb-10">
-      <h2 class="text-lg font-semibold mb-2">DDC – Dental Diagnostic Centre: Where Tradition Meets Innovation!</h2>
-      <p class="text-md">
-        Dr. Salauddin Khan, BDS, MDS, a distinguished name in dental care, has been crafting smiles and building confidence for over 50 years.
-        A former Professor at St. John’s Medical College and Hospital and ex-consultant at St. Martha’s Hospital, Dr. Khan has served celebrities,
-        cricketers, politicians, and professionals since 1973. With a legacy of ethics, empathy, and advanced care, he has also mentored and
-        trained numerous dental specialists across the field.
-      </p>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="text-center mb-6">
-      <p class="font-semibold">Contact Us</p>
-      <p>Call: <a href="tel:+919900000000" class="text-blue-600 underline">+91 99000 00000</a></p>
-      <p>Email: <a href="mailto:info@ddcclinic.in" class="text-blue-600 underline">info@ddcclinic.in</a></p>
-    </div>
-
-    <!-- Google Maps Embed -->
-    <div class="w-full max-w-2xl mb-6">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.123456789!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670abcdefg%3A0xabcdef1234567890!2sDental%20Diagnostic%20Centre!5e0!3m2!1sen!2sin!4v1694791912345"
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    
+  <!-- Heading -->
+  <div class="text-center space-y-2">
+    <h1 class="text-4xl md:text-5xl font-bold">Coming Soon</h1>
+    <p class="text-lg md:text-xl text-gray-300">
+      Stay tuned! For the Dental Diagnostic Centre’s digital experience.<br />
+      <span class="block mt-1">Smiles Across Generations. 50 Years of Dental Excellence.</span>
+    </p>
   </div>
+
+  <!-- About Dr. Salauddin Khan -->
+  <div class="max-w-3xl px-4 text-gray-300 text-center text-sm md:text-base">
+    <p>
+      Dr. Salauddin Khan, BDS, MDS, a distinguished name in dental care, has been crafting smiles and building confidence for over 50 years.
+      A former Professor at St. John’s Medical College and Hospital and ex-consultant at St. Martha’s Hospital, Dr. Khan has served celebrities, cricketers, politicians, and professionals since 1973.
+      With a legacy rooted in ethics, empathy, and advanced care, he has mentored and trained numerous dental specialists across various disciplines of dentistry.
+    </p>
+  </div>
+
+  <!-- Virtual Tour -->
+  <div class="w-full max-w-3xl px-4 space-y-2">
+    <h3 class="text-center text-lg font-medium">▶️ Take a Virtual Tour of Our Clinic</h3>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe class="w-full h-64 md:h-96 rounded-lg" src="https://www.youtube.com/embed/O5hURQIeTjo" title="DDC Virtual Tour" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Notify Me -->
+  <form class="flex flex-col md:flex-row items-center justify-center gap-2 mt-4" method="POST" action="subscribe.php">
+    <input type="email" name="email" placeholder="Enter your email" class="px-4 py-2 rounded text-black w-full md:w-auto" required />
+    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded" type="submit">Notify Me</button>
+  </form>
+
+  <!-- Clinic Info -->
+  <div class="text-center max-w-xl text-sm md:text-base mt-6 space-y-1">
+    <h2 class="text-xl font-semibold">Dental Diagnostic Centre</h2>
+    <p>105 Parvathi Plaza, 2nd & 3rd Floor, Richmond Road,<br>Langford Gardens, Bengaluru 560025</p>
+    <p>📞 <a href="tel:+917676909057" class="text-blue-400 hover:underline">76769 09057</a></p>
+    <p>✉️ <a href="mailto:info@dentaldiagnosticcentre.in" class="text-blue-400 hover:underline">info@dentaldiagnosticcentre.in</a></p>
+  </div>
+
+  <!-- Map -->
+  <div class="w-full max-w-3xl px-4 mt-6">
+    <h3 class="text-center text-lg font-medium mb-2">📍 Visit Us</h3>
+    <iframe class="w-full h-64 md:h-96 rounded-lg border" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.883655783224!2d77.6007282!3d12.9619744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167844c4d0b7%3A0xeef14b1a3f86bc99!2sDental%20Diagnostic%20Centre!5e0!3m2!1sen!2sin!4v1716283296342" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-8 text-sm text-gray-500 text-center">
+    © 2025 Dental Diagnostic Centre. All rights reserved.
+  </footer>
+
 </body>
 </html>
